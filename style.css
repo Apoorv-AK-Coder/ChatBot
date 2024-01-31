@@ -1,0 +1,202 @@
+/* Global CSS Starts Here*/
+
+@import url('https://fonts.googleapis.com/css2?family=Exo');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--secondry-color);
+}
+
+:root {
+    --primary-color: #03A6A6;
+    --secondry-color: #011526;
+    --third-color: #BF6D4E;
+    --fourth-color: #ffffff;
+    --fifth-color: #141414;
+    /*fonts*/
+    --primary-font: Sacramento;
+    --secondry-font: Exo;
+}
+
+.row {
+    width: 1280px;
+    margin: auto;
+    padding: 6% 0;
+    /* background-color: var(--fourth-color); */
+}
+
+.column {
+    flex: auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+img {width: 250px;}
+
+p {
+    font-family: var(--secondry-font);
+    line-height: 2;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: var(--primary-font);
+    line-height: 1.5;
+    font-size: 75px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    color: var(--fourth-color);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    font-family: var(--primary-font);
+    line-height: 1.5;
+    font-size: 55px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-family: var(--primary-font);
+    line-height: 1;
+    font-size: 35px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    color: var(--fourth-color);
+}
+
+h3 i {
+    margin-right: 20px;
+}
+
+.arrow p {
+    font-family: var(--primary-font);
+    line-height: 1;
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    border-radius: 50%;
+    /* background-color: var(--fourth-color); */
+    color: var(--primary-color);
+}
+
+.arrow {
+    position: fixed;
+    bottom: 13px;
+    right: 10px;
+    display: flex;
+}
+
+#hide, #chat { display: none;}
+
+.chat {
+    background-color: white;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 80px;
+    width: 350px;
+    right: 10px;
+    box-shadow: 0px 0px 2px 2px rgba(255, 255, 255, 0.5);
+}
+
+.chathead {
+    background-color: var(--third-color);
+    padding: 15px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.chatfoot {
+    background-color: transparent;
+    padding: 15px;
+    border-radius: 0px 0px 10px 10px;
+    border-top: 1px dashed var(--secondry-color);
+}
+
+.chatbody {
+    height: 250px;
+    padding: 10px 20px;
+}
+
+input {
+    border:none;
+    border-bottom: 1px solid black;
+    width:80%;
+    color:black;
+    padding: 10px 10px;
+    margin-right: 20px;
+}
+::placeholder {color:var(--primary-color); font-size: 16px; font-weight: 600;}
+
+button {
+    font-family: var(--secondry-font);
+    line-height: 2;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    padding: 5px 30px;
+    border-radius: 5px;
+}
+
+.button1, .button2 {
+    margin: 10px 20px 0 0;
+}
+
+.button1,
+.button2:hover {
+    border: 3px dashed var(--secondry-color);
+    background-color: transparent;
+    color: var(--fourth-color);
+    cursor: pointer;
+}
+
+.button1:hover,
+.button2 {
+    border: 3px solid var(--secondry-color);
+    background-color: var(--secondry-color);
+    color: var(--fifth-color);
+    border-radius: 5px;
+}
+
+.button3 {
+    background: linear-gradient(to bottom right, var(--primary-color), transparent);
+    border: none;
+    color: white;
+}
+
+.button3:hover {
+    background: linear-gradient(to bottom right, transparent, var(--primary-color));
+}
+
+.buy {
+    color: var(--fift-color);
+    border: 2px solid var(--secondry-color);
+    cursor: pointer;
+}
+
+.buy:hover {
+    background-color: rgba(151, 151, 141, 0.3);
+}
+
+.proflex {
+    column-count: 4;
+}
+
+/* Global CSS Ends Here*/
