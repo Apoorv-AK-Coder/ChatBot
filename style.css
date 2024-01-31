@@ -132,6 +132,7 @@ h3 i {
 .chatbody {
     height: 250px;
     padding: 10px 20px;
+    overflow-y: scroll;
 }
 
 input {
@@ -155,48 +156,20 @@ button {
     border-radius: 5px;
 }
 
-.button1, .button2 {
-    margin: 10px 20px 0 0;
+.user-message {
+    background-color: #f0f0f0;
+    color: var(--secondry-color);
+    padding: 5px 10px;
+    border-radius: 8px;
+    margin-bottom: 5px;
 }
 
-.button1,
-.button2:hover {
-    border: 3px dashed var(--secondry-color);
-    background-color: transparent;
-    color: var(--fourth-color);
-    cursor: pointer;
-}
-
-.button1:hover,
-.button2 {
-    border: 3px solid var(--secondry-color);
-    background-color: var(--secondry-color);
-    color: var(--fifth-color);
-    border-radius: 5px;
-}
-
-.button3 {
-    background: linear-gradient(to bottom right, var(--primary-color), transparent);
-    border: none;
-    color: white;
-}
-
-.button3:hover {
-    background: linear-gradient(to bottom right, transparent, var(--primary-color));
-}
-
-.buy {
-    color: var(--fift-color);
-    border: 2px solid var(--secondry-color);
-    cursor: pointer;
-}
-
-.buy:hover {
-    background-color: rgba(151, 151, 141, 0.3);
-}
-
-.proflex {
-    column-count: 4;
+.bot-message {
+    background-color: #e0e0e0;
+    color: var(--secondry-color);
+    padding: 5px 10px;
+    border-radius: 8px;
+    margin-bottom: 5px;
 }
 
 /* Global CSS Ends Here*/
